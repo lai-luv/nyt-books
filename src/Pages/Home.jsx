@@ -49,7 +49,7 @@ function Home() {
                         Paperback or hardcover ?
                     </label><br />
                     <select name='cover' id='cover' onChange={handleInputChange}>
-                        <option value='' disabled selected>choose a type of cover</option>
+                        <option defaultValue="default"  >choose a type of cover</option>
                         <option value="hardcover" >Hardcover</option>
                         <option value="paperback">softcover</option>
                     </select>
@@ -59,7 +59,7 @@ function Home() {
                         Fiction or Non-Fiction?
                     </label><br />
                     <select name='genre' id='bool' onChange={handleInputChange}>
-                        <option value='' disabled selected>choose genre </option>
+                        <option defaultValue="default"  >choose genre </option>
                         < option value="fiction">fiction</option>
                         <option value="nonfiction">non-fiction</option>
                     </select>
