@@ -9,5 +9,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     < ErrorBoundary fallback = "Im sorry to inform you the combination  chosen is invalid , please try again " >
     <App />
     </ErrorBoundary>
-  </React.StrictMode>,
+  </React.StrictMode>
 )
