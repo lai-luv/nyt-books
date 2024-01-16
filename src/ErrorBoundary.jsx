@@ -1,7 +1,10 @@
 import React from "react";
 
 class ErrorBoundary extends React.Component {
-    state = { hasError: false };
+    constructor(props) {
+        super(props);
+        this.state = { hasError: false };
+      }
     static getDerivedStateFromError(error) {
         return { hasError: true };
     }
