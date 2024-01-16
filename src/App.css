@@ -1,0 +1,40 @@
+.books-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ 
+  
+}
+.books{
+  border: 2px solid goldenrod;
+  margin: 1em;
+  width: 28%;
+  
+  
+
+}
+
+  
+
+img{
+  width: 200px;
+}
+.app-wrapper{
+  width: 70%;
+  margin:2em auto;
+  text-align: center;
+  /* border: 2px solid whitesmoke; */
+}
+.form-wrapper{
+  width: 70%;
+  display: flex;
+  border: 2px solid whitesmoke;
+  margin: 2em auto;
+  flex-direction: column;
+  padding: 2em;
+
+}
+button{
+  width: 20%;
+  margin: auto ;
+}
