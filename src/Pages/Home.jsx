@@ -51,7 +51,7 @@ function Home() {
                     <select name='cover' id='cover' onChange={handleInputChange}>
                         <option value='' disabled selected>choose a type of cover</option>
                         <option value="hardcover" >Hardcover</option>
-                        <option value="softcover">softcover</option>
+                        <option value="paperback">softcover</option>
                     </select>
                     <br />
                     <br />
