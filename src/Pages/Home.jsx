@@ -4,17 +4,20 @@ import '../App.css'
 
 
 function Home() {
+    const API_KEY = import.meta.env.VITE_APP_API_KEY;
     const [data, setData] = useState(null)
-
+    
     const [userData, setUserData] = useState({})
     const [formData, setFormData] = useState({
         cover: "",
         genre: "",
     })
-    function apiCall() {
+    async function apiCall() {
         const cover = userData.cover
         const genre = userData.genre
-        fetch(`https://api.nytimes.com/svc/books/v3/lists/current/${cover}-${genre}.json?api-key=Xzp1k8JxAfn653QRpKyfkjnSWlaMnAvU`)
+        fetch(`https://api.nytimes.com/svc/books/v3/lists/current/${cover}-${genre}.json?api-key=${API_KEY}`)
+
+        
             .then(response => response.json())
             .then(data => {
                 console.log(data.results.books, "DATA")
